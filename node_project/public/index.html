@@ -1,0 +1,64 @@
+<html>
+<head>
+  <title>Identity Management / Faith 5.0</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" style="margin:8">
+    <div class="row">
+        <form role="form" action = "http://127.0.0.1:8081/process_get" method = "GET">
+            <div class="col-lg-6">
+                <div class="well well-sm"><strong>
+                    <span class="glyphicon glyphicon-asterisk"></span>Enter Details</strong></div>
+
+ <div class="form-group">
+                    <label for="InputUin">Enter UIN</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="uin" id="InputUin" placeholder="Enter UIN" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="InputName">Enter Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="name" id="InputName" placeholder="Enter Name" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="InputName">Enter Age</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="age" id="InputAge" placeholder="Enter Age" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="InputEmail">Enter Date of Birth</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="InputDateofBirth" name="dob" placeholder="Enter Date of Birth" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputEmail">Enter Contacat Number</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="InputContact" name="contact" placeholder="Enter Contact" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right" style="background-color:#00bfff">
+            </div>
+    </form>
+</div>
+</div>
+</body>
+</html>
+
+
