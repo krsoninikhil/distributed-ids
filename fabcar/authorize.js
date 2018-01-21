@@ -18,11 +18,8 @@ var fabric_client = new Fabric_Client();
 
 // get user
 var user = process.argv[2]
-var owner = process.argv[3]
-var name = process.argv[4]
-var age = process.argv[5]
-var dob = process.argv[6]
-var contact = process.argv[7]
+var merchant = process.argv[3]
+var allowed = process.argv[4]
 console.log('User', user)
 
 // setup the fabric network
@@ -70,8 +67,8 @@ Fabric_Client.newDefaultKeyValueStore({ path: store_path
 	var request = {
 		//targets: let default to the peer assigned to the client
 		chaincodeId: 'fabcar',
-		fcn: 'createNID',
-		args: [owner, "blah", name, age, dob, contact, user],
+		fcn: 'authorize',
+		args: [user, merchant, allowed],
 		chainId: 'mychannel',
 		txId: tx_id
 	};

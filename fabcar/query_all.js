@@ -15,10 +15,7 @@ var os = require('os');
 
 //
 var fabric_client = new Fabric_Client();
-
-var user = process.argv[2]
-var client_user_id = process.argv[3]
-
+var user = 'admin'
 // setup the fabric network
 var channel = fabric_client.newChannel('mychannel');
 var peer = fabric_client.newPeer('grpc://localhost:7051');
@@ -57,8 +54,8 @@ Fabric_Client.newDefaultKeyValueStore({ path: store_path
 	const request = {
 		//targets : --- letting this default to the peers assigned to the channel
 		chaincodeId: 'fabcar',
-		fcn: 'queryNID',
-		args: [user, client_user_id]
+		fcn: 'queryAllNIDs',
+		args: ['']
 	};
 
 	// send the query proposal to the peer
