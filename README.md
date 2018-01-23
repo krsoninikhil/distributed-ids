@@ -48,7 +48,7 @@ cd ../node_project
 ```bash
 node server.js
 ```
-- To register user, go to `http://localhost/sigup`
+- To register user, go to `http://localhost/login.html`
 - To save all information of user `http://localhost/process_get`
 
 ## License
